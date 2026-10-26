@@ -4,9 +4,6 @@ Branch:csm
 Section:2
 roll no:26000959
 #TOPICS
-1.Application
-2.Theory
-3.Features
-4.Expected Output
-5.Source Code (HTML+CSS+Java Script)
-6.Conclusion
+1.Healthy Food Nutrition Website
+2.Yoga and Meditation Website
+3.Travel Agency Website
