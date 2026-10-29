@@ -1,247 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Roamly | Travel Agency</title>
+<title>Roamly Travel Agency</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f7f8f5;color:#152b3b}
-a{text-decoration:none;color:inherit}
-.wrap{width:min(1160px,92%);margin:auto}
-header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
-.logo{font-size:28px;font-weight:900}
-.logo span{color:#286a78}
-nav{display:flex;gap:22px;color:#5c6c75}
-.btn{display:inline-block;background:#f2a65a;color:#172d3b;padding:13px 20px;border-radius:30px;font-weight:bold;border:0;cursor:pointer}
-.hero{min-height:470px;border-radius:28px;padding:55px;color:white;display:flex;align-items:center;background:linear-gradient(90deg,#102b3be8,#102b3b50),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=90') center/cover}
-.hero-content{max-width:600px}
-.eyebrow{color:#ffd39d;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:bold}
-h1{font-size:clamp(45px,5.5vw,75px);line-height:1.05;margin:15px 0}
-.hero p{line-height:1.8;color:#e1e9ec;max-width:500px}
-.searchbox{position:relative;margin:30px auto 55px;background:white;border-radius:20px;padding:22px;box-shadow:0 15px 45px #102b3b16;display:grid;grid-template-columns:1.2fr 1fr 1fr auto;gap:15px;align-items:end}
-.field label{display:block;color:#78858a;font-size:12px;font-weight:bold;margin-bottom:8px}
-.field input,.field select{width:100%;border:1px solid #e2e7e7;background:#fbfcfb;border-radius:10px;padding:12px;font-size:14px}
-section{padding:15px 0 60px}
-.heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px;gap:20px}
-.eyebrow2{color:#286a78;text-transform:uppercase;letter-spacing:2px;font-weight:bold;font-size:12px}
-h2{font-size:36px;margin:10px 0}
-p{line-height:1.7;color:#6c7a83}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:white;border:1px solid #e9eeee;border-radius:22px;overflow:hidden;transition:.2s}
-.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px #152b3b14}
-.photo{position:relative}
-.photo img{width:100%;height:225px;object-fit:cover;display:block}
-.price{position:absolute;top:15px;right:15px;background:white;border-radius:30px;padding:8px 12px;font-size:13px;font-weight:bold}
-.body{padding:20px}
-.location{color:#286a78;font-size:12px;font-weight:bold}
-.card h3{font-size:22px;margin:10px 0}
-.card p{font-size:14px}
-.details{display:flex;justify-content:space-between;border-top:1px solid #edf0f0;padding-top:15px;color:#566872;font-size:13px;font-weight:bold;gap:10px}
-.banner{background:#173c4a;color:white;border-radius:26px;padding:35px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.banner h2{font-size:35px}
-.banner p{color:#d1e0e4}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.step{padding:18px;background:#ffffff12;border:1px solid #ffffff24;border-radius:15px}
-.step strong{display:block;color:#ffd39d;font-size:23px;margin-bottom:8px}
-.step span{font-size:13px;line-height:1.5;color:#e1e9ec}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.contactform{background:white;border:1px solid #e6ebea;border-radius:22px;padding:25px;display:grid;gap:13px}
-.contactform input,.contactform textarea,.contactform select{width:100%;padding:13px;border:1px solid #e0e6e5;border-radius:10px;font:inherit}
-.contactform textarea{min-height:90px;resize:vertical}
-.notice{display:none;background:#e5f4e9;color:#205d39;padding:12px;border-radius:10px}
-footer{background:#102a39;color:#e6eff0;padding:28px;text-align:center}
-footer p{color:#e6eff0}
-@media(max-width:850px){
- nav{display:none}
- .searchbox{grid-template-columns:1fr 1fr}
- .grid{grid-template-columns:1fr 1fr}
- .banner,.contact{grid-template-columns:1fr}
- .hero{min-height:420px}
-}
-@media(max-width:560px){
- .hero{padding:30px 23px;min-height:400px}
- .searchbox,.grid,.steps{grid-template-columns:1fr}
- .heading{align-items:flex-start;flex-direction:column}
- h1{font-size:46px}
- .banner{padding:25px}
+body{font-family:Arial;margin:0;background:#fff;color:#263447}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%}
+.logo{font-size:25px;font-weight:bold}
+nav a{margin:10px;text-decoration:none;color:#333}
+button{background:#f59e0b;border:0;padding:12px 18px;border-radius:25px;cursor:pointer}
+.hero{margin:10px auto;width:85%;padding:45px;background:linear-gradient(90deg,#101c30cc,#101c3066),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200') center/cover;color:white;border-radius:18px}
+.hero h1{font-size:38px}
+.hero p{max-width:400px;line-height:1.6}
+.search{display:flex;justify-content:space-around;align-items:center;padding:25px;gap:15px;flex-wrap:wrap}
+input,select{padding:10px;border:1px solid #ddd;border-radius:6px}
+section{padding:25px 8%}
+.places{display:flex;gap:20px;flex-wrap:wrap}
+.card{flex:1;min-width:200px;border:1px solid #eee;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:150px;object-fit:cover}
+.card h3,.card p{margin:12px}
+.dark{background:#172337;color:white;margin:30px 8%;padding:30px;border-radius:15px}
+.benefits{display:flex;gap:20px;flex-wrap:wrap}
+.benefits div{flex:1;min-width:180px}
+.contact{display:flex;gap:30px;flex-wrap:wrap}
+.contact div,.contact form{flex:1;min-width:250px}
+form input,form select{width:100%;margin:8px 0}
+footer{background:#172337;color:white;text-align:center;padding:25px}
+@media(max-width:600px){
+header{flex-direction:column;gap:15px}
+nav a{margin:5px}
+.hero h1{font-size:28px}
+.places,.contact{flex-direction:column}
 }
 </style>
 </head>
 <body>
-<header class="wrap">
-  <a class="logo" href="#">roam<span>ly.</span></a>
-  <nav>
-    <a href="#destinations">Destinations</a>
-    <a href="#packages">Packages</a>
-    <a href="#about">Why Roamly</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <a class="btn" href="#contact">Plan My Trip ↗</a>
+
+<header>
+<div class="logo">roamly.</div>
+<nav>
+<a href="#destinations">Destinations</a>
+<a href="#packages">Packages</a>
+<a href="#why">Why Roamly</a>
+<a href="#contact">Contact</a>
+</nav>
+<button>Plan My Trip →</button>
 </header>
 
-<main class="wrap">
-<section class="hero">
-  <div class="hero-content">
-    <div class="eyebrow">Your next story starts here</div>
-    <h1>Go Beyond<br>the <span style="color:#ffd39d">Ordinary.</span></h1>
-    <p>Discover beautiful destinations, exciting holiday packages, and memorable experiences with travel plans designed around you.</p>
-    <a class="btn" href="#destinations">Explore Destinations →</a>
-  </div>
-</section>
+<div class="hero">
+<small>YOUR NEXT STORY STARTS HERE</small>
+<h1>Go Beyond<br>the Ordinary.</h1>
+<p>Discover beautiful destinations, flexible holiday
+packages, and memorable experiences with travel plans
+designed around you.</p>
+<button onclick="document.getElementById('destinations').scrollIntoView()">Explore Destinations →</button>
+</div>
 
-<form class="searchbox" id="tripSearch">
-  <div class="field">
-    <label for="destination">WHERE TO?</label>
-    <input id="destination" placeholder="e.g. Bali, Manali">
-  </div>
-  <div class="field">
-    <label for="duration">TRIP DURATION</label>
-    <select id="duration">
-      <option>Any duration</option>
-      <option>2–3 days</option>
-      <option>4–6 days</option>
-      <option>7+ days</option>
-    </select>
-  </div>
-  <div class="field">
-    <label for="travellers">TRAVELLERS</label>
-    <select id="travellers">
-      <option>2 travellers</option>
-      <option>1 traveller</option>
-      <option>3–4 travellers</option>
-      <option>5+ travellers</option>
-    </select>
-  </div>
-  <button class="btn" type="submit">Find Trips ↗</button>
-</form>
-<div id="notice" class="notice"></div>
+<div class="search">
+<div>WHERE TO<br><input placeholder="e.g. Bali, Manali"></div>
+<div>TRIP DURATION<br>
+<select><option>Any duration</option><option>3 days</option><option>5 days</option></select>
+</div>
+<div>TRAVELLERS<br>
+<select><option>2 travellers</option><option>1 traveller</option><option>4 travellers</option></select>
+</div>
+<button onclick="document.getElementById('destinations').scrollIntoView()">Find Trips →</button>
+</div>
 
 <section id="destinations">
-  <div class="heading">
-    <div>
-      <div class="eyebrow2">Handpicked for you</div>
-      <h2>Popular Destinations</h2>
-      <p>From mountain escapes to beautiful beaches.</p>
-    </div>
-    <span>✦ Curated travel ideas</span>
-  </div>
-  <div class="grid">
-    <article class="card">
-      <div class="photo">
-        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=85" alt="Tropical island">
-        <span class="price">From ₹24,999</span>
-      </div>
-      <div class="body">
-        <div class="location">INDONESIA · ISLAND ESCAPE</div>
-        <h3>Bali, Indonesia</h3>
-        <p>Discover tropical beaches, green rice terraces, temples, and colourful local culture.</p>
-        <div class="details"><span>5 days / 4 nights</span><span>★ 4.9</span></div>
-      </div>
-    </article>
-    <article class="card">
-      <div class="photo">
-        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=85" alt="Himalayan mountain scenery">
-        <span class="price">From ₹12,499</span>
-      </div>
-      <div class="body">
-        <div class="location">INDIA · MOUNTAIN RETREAT</div>
-        <h3>Manali, Himachal</h3>
-        <p>Enjoy mountain views, pine forests, local cafés, and fresh alpine air.</p>
-        <div class="details"><span>4 days / 3 nights</span><span>★ 4.8</span></div>
-      </div>
-    </article>
-    <article class="card">
-      <div class="photo">
-        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=85" alt="Taj Mahal in Agra">
-        <span class="price">From ₹8,999</span>
-      </div>
-      <div class="body">
-        <div class="location">INDIA · CULTURAL JOURNEY</div>
-        <h3>Agra & Jaipur</h3>
-        <p>Explore historic architecture, vibrant markets, and the stories of royal India.</p>
-        <div class="details"><span>3 days / 2 nights</span><span>★ 4.7</span></div>
-      </div>
-    </article>
-  </div>
+<small>HANDPICKED FOR YOU</small>
+<h2>Popular Destinations</h2>
+<p>From mountain escapes to beautiful beaches</p>
+<div class="places">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400" alt="Bali">
+<h3>Bali, Indonesia</h3>
+<p>Discover tropical beaches, green rice terraces and natural beauty.</p>
+<p>6 days / 4 nights · ★ 4.9</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400" alt="Mountains">
+<h3>Manali, Himachal</h3>
+<p>Enjoy mountain views, pine forests and cool mountain air.</p>
+<p>4 days / 3 nights · ★ 4.8</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400" alt="Taj Mahal">
+<h3>Agra & Jaipur</h3>
+<p>Explore historic architecture, vibrant markets and royal heritage.</p>
+<p>3 days / 2 nights · ★ 4.7</p>
+</div>
+</div>
 </section>
 
-<section id="packages">
-  <div class="banner">
-    <div>
-      <div class="eyebrow">Travel, thoughtfully planned</div>
-      <h2>Less Planning.<br>More Discovering.</h2>
-      <p>Explore sample packages with destination ideas, trip durations, and itinerary inspiration. Displayed prices are illustrative.</p>
-      <a class="btn" href="#contact">Build My Itinerary ↗</a>
-    </div>
-    <div class="steps">
-      <div class="step"><strong>01</strong><span>Tell us where you want to go.</span></div>
-      <div class="step"><strong>02</strong><span>Choose a plan that suits you.</span></div>
-      <div class="step"><strong>03</strong><span>Pack your bags and explore.</span></div>
-    </div>
-  </div>
+<div class="dark" id="packages">
+<small>TRAVEL THOUGHTFULLY, PLANNED</small>
+<h2>Less Planning.<br>More Discovering.</h2>
+<p>Explore handpicked packages with destination ideas,
+trip suggestions and memorable experiences.</p>
+<button onclick="document.getElementById('contact').scrollIntoView()">Build My Itinerary →</button>
+<div class="benefits">
+<div><h3>01</h3>Choose your destination</div>
+<div><h3>02</h3>Personalise your trip</div>
+<div><h3>03</h3>Explore and enjoy</div>
+</div>
+</div>
+
+<section id="why">
+<h2>Every Detail, Considered.</h2>
+<div class="benefits">
+<div><h3>♡ Personal Itineraries</h3><p>Plan journeys around your interests, pace and travel style.</p></div>
+<div><h3>☀ Helpful Guidance</h3><p>Get destination information, trip suggestions and useful tips.</p></div>
+<div><h3>🌍 Memorable Experiences</h3><p>Make new memories through culture, nature and discovery.</p></div>
+</div>
 </section>
 
-<section id="about">
-  <div class="heading">
-    <div class="eyebrow2">Why travel with Roamly?</div>
-    <h2>Every Detail, Considered.</h2>
-  </div>
-  <div class="grid">
-    <article class="card"><div class="body"><h3>🧭 Personal Itineraries</h3><p>Plan journeys around your interests, pace, and travel style.</p></div></article>
-    <article class="card"><div class="body"><h3>🤝 Helpful Guidance</h3><p>Organise destination information, trip durations, and key plans.</p></div></article>
-    <article class="card"><div class="body"><h3>🌍 Memorable Experiences</h3><p>Make room for local culture, beautiful views, and discovery.</p></div></article>
-  </div>
+<section id="contact">
+<div class="contact">
+<div>
+<small>LET'S PLAN SOMETHING GREAT</small>
+<h2>Your Next Adventure Is Calling.</h2>
+<p>Share your travel preferences using this simple form.
+Start planning your next holiday with Roamly.</p>
+</div>
+<form onsubmit="event.preventDefault();alert('Thank you! Your travel enquiry has been received.')">
+<label>Your name</label>
+<input type="text" placeholder="Enter your name" required>
+<label>Email address</label>
+<input type="email" placeholder="Enter your email" required>
+<label>Choose a travel style</label>
+<select required>
+<option value="">Select a style</option>
+<option>Adventure</option>
+<option>Beach holiday</option>
+<option>Family trip</option>
+<option>Cultural tour</option>
+</select>
+<label>Where would you like to go?</label>
+<input type="text" placeholder="Enter destination" required>
+<button type="submit">Plan My Adventure →</button>
+</form>
+</div>
 </section>
-
-<section class="contact" id="contact">
-  <div>
-    <div class="eyebrow2">Let's plan something great</div>
-    <h2>Your Next Adventure Is Calling.</h2>
-    <p>Share your travel preferences using the inquiry form. This demonstration shows a confirmation in your browser; it does not send information to a server.</p>
-  </div>
-  <form class="contactform" id="inquiry">
-    <input id="name" placeholder="Your name" required>
-    <input id="email" type="email" placeholder="Email address" required>
-    <select id="interest" required>
-      <option value="">Choose a travel style</option>
-      <option>Adventure</option>
-      <option>Relaxation</option>
-      <option>Culture and history</option>
-      <option>Family holiday</option>
-    </select>
-    <textarea id="message" placeholder="Where would you love to go?"></textarea>
-    <button class="btn" type="submit">Send Travel Inquiry →</button>
-    <div id="formNotice" role="status"></div>
-  </form>
-</section>
-</main>
 
 <footer>
-  <p>roamly. | Find Your Somewhere</p>
-  <small>Sample destinations and prices are for educational demonstration only.</small>
+<h3>roamly.</h3>
+<p>Your next story starts here.</p>
+<p>© 2026 Roamly Travel Agency</p>
 </footer>
 
-<script>
-document.getElementById("tripSearch").addEventListener("submit",function(event){
-  event.preventDefault();
-  const destination=document.getElementById("destination").value.trim()||"your chosen destination";
-  const duration=document.getElementById("duration").value;
-  const travellers=document.getElementById("travellers").value;
-  const notice=document.getElementById("notice");
-  notice.style.display="block";
-  notice.textContent="Your search: "+destination+" · "+duration+" · "+travellers+". Explore the sample packages below!";
-  document.getElementById("destinations").scrollIntoView({behavior:"smooth"});
-});
-
-document.getElementById("inquiry").addEventListener("submit",function(event){
-  event.preventDefault();
-  const name=document.getElementById("name").value;
-  const message=document.getElementById("formNotice");
-  message.style.color="#286a78";
-  message.style.fontWeight="bold";
-  message.textContent="Thank you, "+name+"! Your demo inquiry is complete. No information was sent to a server.";
-});
-</script>
 </body>
 </html>
+ 
